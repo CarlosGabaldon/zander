@@ -163,8 +163,8 @@
    </object> 
    <object class="java.awt.geom.Point2D$Double"> 
     <void method="setLocation"> 
-     <double>568.0</double> 
-     <double>610.0</double> 
+     <double>553.0</double> 
+     <double>616.0</double> 
     </void> 
    </object> 
   </void> 
