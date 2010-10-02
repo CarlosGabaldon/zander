@@ -1,3 +1,4 @@
 class Topic < ActiveRecord::Base
-  has_many :materials
+  belongs_to :syllabus
+  has_and_belongs_to_many :materials
 end
