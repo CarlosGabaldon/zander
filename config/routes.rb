@@ -1,4 +1,6 @@
 Zander::Application.routes.draw do
+  resources :topics
+
   resources :courses
   resources :home
 
