@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20101003010942) do
 
   create_table "syllabi", :force => true do |t|
     t.integer  "course_id"
+    t.integer  "topic_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

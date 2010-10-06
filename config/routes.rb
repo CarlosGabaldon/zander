@@ -1,8 +1,17 @@
 Zander::Application.routes.draw do
-  resources :topics
+  #resources :topics
 
-  resources :courses
+  #resources :courses
   resources :home
+  
+  
+  # Setup sub-resources
+  # /courses/1/topics
+  resources :courses do
+    resources :topics
+  end
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

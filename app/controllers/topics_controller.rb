@@ -1,4 +1,5 @@
 class TopicsController < ApplicationController
+  before_filter :load_course
   # GET /topics
   # GET /topics.xml
   def index
@@ -44,7 +45,7 @@ class TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.save
-        format.html { redirect_to(@topic, :notice => 'Topic was successfully created.') }
+        format.html { redirect_to( course_topic_url(@course, @topic), :notice => 'Topic was successfully created.') }
         format.xml  { render :xml => @topic, :status => :created, :location => @topic }
       else
         format.html { render :action => "new" }
@@ -60,7 +61,7 @@ class TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.update_attributes(params[:topic])
-        format.html { redirect_to(@topic, :notice => 'Topic was successfully updated.') }
+        format.html { redirect_to(course_topic_url(@course, @topic), :notice => 'Topic was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,8 +77,15 @@ class TopicsController < ApplicationController
     @topic.destroy
 
     respond_to do |format|
-      format.html { redirect_to(topics_url) }
+      format.html { redirect_to(course_topics_url(@course)) }
       format.xml  { head :ok }
     end
   end
+  
+  private
+  
+  def load_course
+     @course = Course.find(params[:course_id])
+  end
+  
 end

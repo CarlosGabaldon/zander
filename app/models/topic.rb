@@ -1,4 +1,4 @@
 class Topic < ActiveRecord::Base
-  belongs_to :syllabus
+  has_many :courses, :through => :syllabi
   has_and_belongs_to_many :materials
 end
