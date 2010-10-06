@@ -42,9 +42,11 @@ class TopicsController < ApplicationController
   # POST /topics.xml
   def create
     @topic = Topic.new(params[:topic])
-
+ 
     respond_to do |format|
       if @topic.save
+        @course.topics << @topic
+        @course.save
         format.html { redirect_to( course_topic_url(@course, @topic), :notice => 'Topic was successfully created.') }
         format.xml  { render :xml => @topic, :status => :created, :location => @topic }
       else

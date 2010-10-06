@@ -6,8 +6,10 @@
     <%= link_to course.name, course %> - Syllabus
     <hr/>
     <h3>Topics</h3>
-    <%= course.syllabus.id %>
-  </li>
+    <ol>
+    <% course.topics.each do |topic| %>
+      <li><%= topic.name %> </li>
+    <% end %>
 <% end %>
 
 </ul>
