@@ -18,15 +18,15 @@
  
  
  
- Class
-     |
-     Topics
-          |
-          Materials
-                  |
-                  Discussions
-                            |
-                            Posts
+  Class
+      |
+      Topics
+           |
+           Materials
+                   |
+                   Discussions
+                             |
+                             Posts
       
           
          
