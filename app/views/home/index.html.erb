@@ -5,10 +5,18 @@
   <li>
     <%= link_to course.name, course %> - Syllabus
     <hr/>
-    <h3>Topics</h3>
+    <h4>Topics</h3>
     <ol>
     <% course.topics.each do |topic| %>
-      <li><%= topic.name %> </li>
+      <li>
+       <h3><%= topic.name %></h3>
+       <h4>Materials</h4>
+       <ul>
+       <% topic.materials.each do |material| %>
+          <h3><%= material.name %></h3>
+       <%end%> 
+       <ul>
+     </li>
     <% end %>
 <% end %>
 
