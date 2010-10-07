@@ -15,3 +15,17 @@
  * Group individuals
  * Instructors/Mentors
  * Suggestion of content based on simple rating analysis
+ 
+ 
+ Class
+   |
+   Topics
+         |
+         Materials
+                 |
+                 Discussions
+                           |
+                           Posts
+      
+          
+         
