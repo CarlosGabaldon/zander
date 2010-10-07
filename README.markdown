@@ -16,7 +16,7 @@
  * Instructors/Mentors
  * Suggestion of content based on simple rating analysis
  
-   Object Model
+  Object Model
       |
       Class
           |
