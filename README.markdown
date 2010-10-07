@@ -17,7 +17,7 @@
  * Suggestion of content based on simple rating analysis
  
  
- |
+ 
  Class
      |
      Topics
