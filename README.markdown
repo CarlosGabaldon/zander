@@ -16,17 +16,17 @@
  * Instructors/Mentors
  * Suggestion of content based on simple rating analysis
  
- 
- 
-   Class
+  Object Model
       |
-      Topics
-           |
-           Materials
-                   |
-                   Discussions
-                             |
-                             Posts
+      Class
+          |
+          Topics
+               |
+               Materials
+                       |
+                       Discussions
+                                 |
+                                 Posts
       
           
          
