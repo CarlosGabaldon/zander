@@ -18,7 +18,7 @@
  
  
  
-  * Class
+   Class
       |
       Topics
            |
