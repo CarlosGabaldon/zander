@@ -18,14 +18,14 @@
  
  
  Class
-   |
-   Topics
-         |
-         Materials
-                 |
-                 Discussions
-                           |
-                           Posts
+     |
+     Topics
+          |
+          Materials
+                  |
+                  Discussions
+                            |
+                            Posts
       
           
          
