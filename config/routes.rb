@@ -1,14 +1,15 @@
 Zander::Application.routes.draw do
-  #resources :topics
+  
 
-  #resources :courses
   resources :home
   
   
   # Setup sub-resources
   # /courses/1/topics
   resources :courses do
-    resources :topics
+    resources :topics do
+      resources :materials
+    end
   end
   
   

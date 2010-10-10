@@ -1,0 +1,27 @@
+<h1>Listing materials</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Url</th>
+    <th></th>
+  </tr>
+
+<% @materials.each do |material| %>
+  <tr>
+    <td><%= material.name %></td>
+    <td><%= material.description %></td>
+    <td><%= material.type %></td>
+    <td><%= material.url %></td>
+    <td><%= link_to 'Show', course_topic_material_path(@course, @topic, material) %></td>
+    <td><%= link_to 'Edit', edit_course_topic_material_path(@course, @topic, material) %></td>
+    <td><%= link_to 'Destroy', course_topic_material_path(@course, @topic, material), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Material', new_course_topic_material_path(@course, @topic) %>

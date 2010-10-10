@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @material.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @material.description %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @material.type %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @material.url %>
+</p>
+
+<p>
+
+   
+</p>
+
+
+<%= link_to 'Edit', edit_course_topic_material_path(@course, @topic, @material) %> |
+<%= link_to 'Back', course_topic_materials_path(@course, @topic) %>

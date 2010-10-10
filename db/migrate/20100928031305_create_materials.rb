@@ -3,6 +3,8 @@ class CreateMaterials < ActiveRecord::Migration
     create_table :materials do |t|
       t.string :name
       t.text :description
+      t.string :type
+      t.string :url
 
       t.timestamps
     end

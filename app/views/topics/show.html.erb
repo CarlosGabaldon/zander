@@ -1,5 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 
+<p>
+  <b>Name:</b>
+  <%= @topic.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @topic.description %>
+</p>
+
+<p>
+  <%= link_to "Material ", course_topic_materials_path(@course, @topic) %>
+   
+</p>
+
+
+
 <%= link_to 'Edit', edit_course_topic_path(@course, @topic) %> |
 <%= link_to 'Back', course_topics_path(@course) %>

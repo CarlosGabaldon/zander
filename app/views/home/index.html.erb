@@ -11,12 +11,14 @@
       <li>
        <h3><%= topic.name %></h3>
        <h4>Materials</h4>
-       <ul>
-       <% topic.materials.each do |material| %>
-          <h3><%= material.name %></h3>
-       <%end%> 
-       <ul>
-     </li>
+         <ul>
+          <% topic.materials.each do |material| %>
+          <li>
+             <h3><%= material.name %></h3>
+           </li>
+          <%end%> 
+          </ul>
+      </li>
     <% end %>
 <% end %>
 
